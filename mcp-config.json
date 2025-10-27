@@ -2,7 +2,10 @@
   "mcpServers": {
     "figma-desktop": {
       "type": "http",
-      "url": "http://127.0.0.1:3845/mcp"
+      "url": "http://127.0.0.1:3845/mcp",
+      "headers": {
+        "X-Figma-Token": "${FIGMA_ACCESS_TOKEN}"
+      }
     }
   }
 }
